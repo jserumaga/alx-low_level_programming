@@ -1,6 +1,5 @@
 #include <stdio.sh>
-
-/**
+/*
  * Main - Entry point
  *
  * Return: return (0)
