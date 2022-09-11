@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *
  * main - entry point
  *
  * Declaration : C program the prints with function put()
  *
  * Return: Value 0
+ *
  */
 int main(void)
 {
