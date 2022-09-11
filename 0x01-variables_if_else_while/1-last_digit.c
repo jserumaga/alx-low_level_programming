@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.>
+#include <time.h>
 
 /**
  * main - A program shows greater than 5, is less than 6, or is 0
