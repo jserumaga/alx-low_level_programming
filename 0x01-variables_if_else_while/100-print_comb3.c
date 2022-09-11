@@ -14,15 +14,15 @@ int main(void)
 {
 	int j;
 
-	for (j = 0; j < 90; j++)
+	for(j = 0; j < 90; j++)
 	{
-		for ()
+		for()
 		{
 			putchar((j / 10) + '0');
 			putchar((j % 10) + '0');
 
 		}
-		if (j != 89)
+		if(j != 89)
 		{
 			putchar(',');
 			putchar(' ');
