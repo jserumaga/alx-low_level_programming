@@ -15,13 +15,17 @@ int main(void)
 	for (L = 'a'; L <= 'z'; L++)
 	{
 		putchar(L);
-		putchar('\n');
+
 	}
+
+	putchar('\n');
+
 	for (L = 'A'; L <= 'Z'; L++)
 	{
 		putchar(L);
-		putchar('\n');
 	}
+
+	putchar('\n');
 
 	return (0);
 
