@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	char lower, e, q;
+	int lower, e, q;
 
 	e = 'e';
 	q = 'q';
@@ -24,3 +24,4 @@ int main(void)
 
 	putchar('\n');
 	return (0);
+}
