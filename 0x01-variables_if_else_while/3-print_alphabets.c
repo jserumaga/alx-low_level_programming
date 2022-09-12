@@ -14,11 +14,11 @@ int main(void)
 
 	for (L = 'a'; L <= 'z'; L++)
 	{
-		putchar(L\n)
+		putchar("L\n")
 	}
 	for (L = 'A'; L <= 'Z'; L++)
 	{
-		putchar(L\n)
+		putchar("L\n")
 	}
 
 	return (0);
