@@ -1,16 +1,13 @@
 #include "main.h"
-
 /**
- * main - Entry point
+ * _islower(int c) - Checks lower cases
  *
- * Return: Zero successfully
+ *  * Return: Zero successfully
  *
  */
 
 int _islower(int c)
 {
-	int c;
-
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
