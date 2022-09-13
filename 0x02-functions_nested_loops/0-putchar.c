@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main - This is the entry point
@@ -10,8 +10,11 @@
  */
 int main(void)
 {
-	_putchar;
+	int index;
+	char ascii[] = "_putchar\n";
 
-	_putchar('\n');
+	for (index = 0; ascii[index]; index++
+			_putchar(ascii[index]);
+
 	return (0);
 }
