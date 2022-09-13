@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * iprint_last_digit -  prints the last digit of a number.
  *
- * Description
+ * @i is the int that will be used in the argument
+ * 
  *
  * Return: Zero always
  *
  */
-int print_last_digit(int)
+int print_last_digit(int i)
 {
-	int last_digit = l % 10;
+	int last_digit = i % 10;
 
-	if (l > 0)
-		last_digit = last_digit * -1;
+	if (last_digit < 0)
+		last_digit *= -1;
 
 	_putchar(last_digit + '0');
 
