@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _abs if the function to print absolute
+ *
+ * @n: is the int to be used in the argument
  *
  * Return: Zero when success
  *
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	if (n > 0)
 	{
