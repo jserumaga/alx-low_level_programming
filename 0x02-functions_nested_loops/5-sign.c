@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_sign - funtion to check for sign
  *
- * Description:
+ * @n: is the int that will use for the argument
  *
  * Return: Zero on success
  *
