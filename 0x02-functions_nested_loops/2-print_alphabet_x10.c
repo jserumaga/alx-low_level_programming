@@ -1,29 +1,20 @@
 #include "main.h"
-
 /**
  * main - Entry point
  *
  * Return: Always zero
  *
  */
-
 void print_alphabet_x10(void)	
 {
-	int i, j;
+	char i, j;
 
-	j = 0;
-
-	while (j < 10)
+	for (i = 0; i <= 9; i++)
 	{
-		for (n = 'a'; n <= 'z'; n++)
+		for (j = 'a'; j <= 'z'; j++)
 		{
-			_putchar(n);
+			_putchar(j);
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
-}
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
 }
