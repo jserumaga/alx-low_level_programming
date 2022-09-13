@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 
 /**
  * main - This is the entry point
@@ -8,9 +9,9 @@
  * Return: Zero with succcess
  *
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char *c;
+	int c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
@@ -22,7 +23,7 @@ void print_alphabet(void);
 
 int main(void)
 {
-	putchar("Alphabet\n");
+	putchar('c\n');
 	print_alphabet();
 	return (0);
 }
