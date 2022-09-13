@@ -11,11 +11,15 @@
  */
 int main(void)
 {
-	int index;
-	char ascii[] = "_putchar\n";
-
-	for (index = 0; ascii[index]; index++
-			_putchar(ascii[index]);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
