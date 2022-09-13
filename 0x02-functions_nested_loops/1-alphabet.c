@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - This is the entry point
@@ -23,7 +23,6 @@ void print_alphabet(void)
 
 int main(void)
 {
-	putchar('c\n');
 	print_alphabet();
 	return (0);
 }
