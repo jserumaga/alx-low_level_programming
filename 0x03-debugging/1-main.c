@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	printf("infinte loop incoming : (\n");
+	printf("Infinte loop incoming : (\n");
 
 	i = 0;
 	/*
