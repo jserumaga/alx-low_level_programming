@@ -1,8 +1,10 @@
 #include "main.h"
 /**
  * _islower(int c) - Checks lower cases
- *
- *  * Return: Zero successfully
+ * 
+ * @c: is the int that argument with use
+ * 
+ * Return: Zero successfully
  *
  */
 
