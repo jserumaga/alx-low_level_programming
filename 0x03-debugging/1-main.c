@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - causes an infinte loop
- * Retrun: 0
- */
-
+* main - causes an infinte loop
+* Retrun: 0
+*/
 int main(void)
 {
 	int i;
