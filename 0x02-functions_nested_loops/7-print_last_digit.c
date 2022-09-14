@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * iprint_last_digit -  prints the last digit of a number.
- *
- * @i is the int that will be used in the argument
- * 
- *
+ * print_last_digit -  prints the last digit of a number.
+ * @i: is the int that will be used in the argument
  * Return: Zero always
  *
  */
