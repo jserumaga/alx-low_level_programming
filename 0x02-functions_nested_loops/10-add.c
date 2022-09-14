@@ -2,7 +2,8 @@
 /**
  * add - is the function that adds two number
  *
- * @a,b: are the int to be used as arguments
+ * @a: Is the first int in the argument
+ * @b: is the second int to be used as arguments
  *
  * Return: 0
  *
