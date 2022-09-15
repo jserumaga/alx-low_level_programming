@@ -12,20 +12,17 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int c;
 
-
-	for (a = 0; a <= 9; a++)
+	for (c = 48; c <= 57; c++)
 	{
-		for (b = 0; b <= 9; b++)
-		{
-			for (c = 0; c <= 9; c++)
+		putchar(c)
+			if (c != 57)
 			{
-				putchar("%d, %d, %d\n", a, b, c);
+				putchar(',');
+				putchar('');
 			}
-		}
 	}
-
-	return (0)
+	putchar('\n');
+	return (0);
 }
-
