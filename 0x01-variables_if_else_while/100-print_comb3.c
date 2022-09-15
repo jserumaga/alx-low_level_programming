@@ -12,22 +12,27 @@
  */
 int main(void)
 {
-	int j;
+	int c = 0;
+	int f_d;
+	int l_d;
 
-	for(j = 0; j < 90; j++)
+	while (c <= 99)
 	{
-		for()
-		{
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
 
-		}
-		if(j != 89)
+		if (f_d < l_d)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(f_d);
+			putchar(l_);
 
+			if (c != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
+		c++;
 	}
 	putchar('\n');
 	return (0);
