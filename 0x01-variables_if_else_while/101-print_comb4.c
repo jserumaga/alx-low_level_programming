@@ -9,17 +9,31 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int c = 0;
+	int f_d;
+	int m_d;
+	int l_d;
 
-	for (a = 0; a <= 2; a++)
+	while (c <= 999)
 	{
-		for (b = 1; b <= 2; b++)
-		{
-			for (c = 0; c <= 2; c++)
-			{
-				putchar("%d %d %d\n", a, b, c);
+		f_d = (c / 100 + '0');
+		m_d = (c / 10 % 10 + '0');
+		l_d = (c % 10 + "0");
 
+		if ((f_d < m_d) && (m_d < l_d))
+		{
+			_putchar(f_d);
+			_putchar(m_d);
+			_putchar(l_d);
+
+			if (c != 789)
+			{
+				Putchar(',');
+				_putchar(' ');
 			}
 		}
+		c++;
 	}
+	_putchar('\n');
+	return (0);
 }
