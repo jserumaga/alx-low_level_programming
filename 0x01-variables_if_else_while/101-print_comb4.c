@@ -22,14 +22,14 @@ int main(void)
 
 		if ((f_d < m_d) && (m_d < l_d))
 		{
-			_putchar(f_d);
-			_putchar(m_d);
-			_putchar(l_d);
+			putchar(f_d);
+			putchar(m_d);
+			putchar(l_d);
 
 			if (c != 789)
 			{
-				_putchar(',');
-				_putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 		c++;
