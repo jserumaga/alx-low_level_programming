@@ -34,6 +34,6 @@ int main(void)
 		}
 		c++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
