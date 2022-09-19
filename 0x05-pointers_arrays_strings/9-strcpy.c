@@ -18,5 +18,5 @@ inc++;
 }
 *(dest + inc) = '\0';
 
-rest(dest);
+return (dest);
 }
