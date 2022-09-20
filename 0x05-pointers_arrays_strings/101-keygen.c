@@ -14,7 +14,7 @@ void keygen(int N)
 int i = 0;
 int randomizer = 0;
 
-srand((unsigned int((time(NULL)));
+srand((unsigned int((time(NULL))));
 
 char numbers[] = "0123456789";
 
