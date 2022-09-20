@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * put2 - print every other character
+ * puts2 - print every other character
  * @str: string
  *
  * Return: nothing
  */
 
-void put2(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
