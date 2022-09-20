@@ -1,58 +1,43 @@
 #include <stdio.h>
-#include <time.h>
-#include <math.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
-*keygen - Random passowrd generator
-*@N: the argument
-*Return: Passowrd
-*/
+ * main - random password generator
+ *
+ * Return: always zero
+ */
 
-void keygen(int N)
+int main(void)
 {
-int i = 0;
-int randomizer = 0;
+	int i, j, k, s;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*";
+	ch p[58];
 
-srand((unsigned int((time(NULL))));
-
-char numbers[] = "0123456789";
-
-char letter[] = "abcdefghijklmnopqrstuvwxyz";
-
-char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-char symbols[] = "!@#$%^&*?~";
-
-char password[N];
-
-randomizer = rand() % 4;
-
-for (i = 0; i < N; i++)
-{
-if (randomizer == 1)
-{
-password[i] = numbers[rand() % 10];
-randomizer = rand() % 4;
-printf("\%c", password[i]);
-}
-else if (randomizer == 2)
-{
-password[i] = symbols[rand() % 8];
-randomizer = rand() % 4;
-printf("\%c", password[i]);
-}
-else if (randomizer == 3)
-{
-password[i] = LETTER[rand() % 26];
-randomizer = rand() % 4;
-printf("\%c", password[i]);
-}
-else
-{
-password[i] = letter[rand() % 26];
-randomizer = rand() % 4;
-printf("\%c", password[i]);
-}
-}
+	srand(time(NULL));
+	while (s != 2772)
+	{
+		i = k = s = 0;
+		while ((2772 - 122) > s)
+		{
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
+		}
+		while (c[k])
+		{
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
+		}
+	}
+	p[i] = '\0';
+	printf("%s", p);
+	return (0);
 }
