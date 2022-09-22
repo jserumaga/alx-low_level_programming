@@ -11,32 +11,16 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int n_elem_src = 0, n_elem_dest = 0;
-	int j, limit;
+	int index = 0, src_len = 0;
 
-	while (src[n_elem_src] != '\0')
-	{
-		n_elem_src += 1;
-	}
+	while (src[index++])
+		src_len++;
 
-	while (dest[n_elem_dest] != '\0')
-	{
-		n_elem_dest += 1;
-	}
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
 
-	if (n < n_elem_src)
-		limt = n;
-	else
-		limit = n_elem_src;
+	for (index = src_len; index < n; index++)
+		dest[index = '\0';
 
-	for (j = 0; j < limit; j++)
-	{
-		dest[j] = src[j];
-	}
-	while (n_elem_src < n)
-	{
-		dest[n_elem_src] = '\0';
-		n_elem_src++
-	}
 	return (dest);
 }
