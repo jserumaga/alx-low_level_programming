@@ -5,20 +5,19 @@
  * @s: character pointer argument
  * @c: Character to be located
  *
- * Return: pointer to spot s
+ * Return: pointer to spot s with c or null
  */
 
 char *_strchr(char *s, char c)
 {
-	int a = 0, b;
+	int i;
 
-	while (s[a])
-		a++;
-	for (b = 0; b < a; b++)
+	for (i = 0; *(s + i); i++)
 	{
-		if (c == s[b])
-			s += b;
-		return (s);
+		if (*(s + i) == c)
+			return (s + i);
 	}
-	return ('\0');
+	if (*(s + i) == c)
+		return (s + i);
+	return (0);
 }
