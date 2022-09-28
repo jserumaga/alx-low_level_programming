@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * main - header file for prototypes
