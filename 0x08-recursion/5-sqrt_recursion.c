@@ -9,24 +9,25 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == 1 || n == 0)
-		return (n);
-	return (_sqrt_recursion(0, n));
+	if (n <= 0)
+		return (-1);
+	return (_find_sqrt(1, n));
 }
 
 /**
- * _sqrt - returns the square root of a number
- * @n: test number
- * @x: squared number
+ * _find_sqrt - finds square root recursively, needs pre param
  *
- * Return: the square root of n
+ * @prev: previous result of function
+ * @find: constant int to find sq root for
+ *
+ * Return: square root of find, or -1 if not foundn
  */
 
-int _sqrt(int n, int x)
+int _find_sqrt(int prev, int find)
 {
-	if (n > x / 2)
+	if (prev > find)
 		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	if (prev * prev == find)
+		return (prev);
+	return (_find_sqrt(prev + 1, find));
 }
