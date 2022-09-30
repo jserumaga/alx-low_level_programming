@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - Print name of the program
+ * main - this is a function program
  * @argc: Count arguments
  * @argv: Arguments
  *
- * Retunr: Always 0 on succes
+ * Return: Always 0 on succes
  */
 
 int main(int argc, char *argv[])
