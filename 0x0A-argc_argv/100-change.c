@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int num, result = 0, j;
+	int num, j, result = 0;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
+
 	num = atoi(argv[1]);
 	if (num < 0)
 	{
