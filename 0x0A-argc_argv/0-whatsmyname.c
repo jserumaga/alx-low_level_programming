@@ -10,8 +10,5 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n", agrv[0]);
-
-	return (0);
+	printf("%s\n", agrv);
 }
