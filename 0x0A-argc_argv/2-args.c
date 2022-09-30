@@ -17,4 +17,5 @@ int main(int argc, char *argv[])
 	{
 		printf("argv index %d is = %s\n", i, argv[i]);
 	}
+	return (0);
 }
