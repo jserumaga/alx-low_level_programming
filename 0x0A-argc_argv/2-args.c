@@ -11,11 +11,10 @@
 
 int main(int argc, char *argv[])
 {
-	int count = 0;
+	int i;
 
-	if (argc > 0)
+	for (i = 0; i < argc; i++)
 	{
-		while (count < argc)
+		printf("argv index %d is = %s\n", i, argv[i]);
 	}
-	printf("%s\n", argv[count]);
 }
