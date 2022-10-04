@@ -38,14 +38,15 @@ int count_word(char *str)
 
 	for (index = 0; index < len; index++)
 	{
-		if (*(str + index != ' ')
-				{
-				words++;
-				index += word_len(str + index);
-				}
-				}
-				return (words);
-				}
+		if (*(str + index != ' '))
+		{
+			words++;
+			index += word_len(str + index);
+		}
+	}
+	
+	return (words);
+}
 
 /**
  * strtow - splits a string into words
