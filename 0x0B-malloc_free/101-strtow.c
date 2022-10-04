@@ -38,7 +38,7 @@ int count_word(char *str)
 
 	for (index = 0; index < len; index++)
 	{
-		if (*(str + index != ' '))
+		if (*(str + index) != ' ')
 		{
 			words++;
 			index += word_len(str + index);
