@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 			change += aux;
 			total -= coins[position] * aux;
 		}
-		position++
+		position++;
 	}
 	printf("%d\n", change);
 	return (0);
