@@ -8,7 +8,7 @@
  * Return: 1
  */
 
-in _strlen(char *s)
+int _strlen(char *s)
 {
 	unsigned int i;
 
@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 		s2 == "";
 
 	/*count size total*/
-	size = (_strlen(s1) + (_strlen(s2) + 1);
+	size = (_strlen(s1) + (_strlen(s2) + 1));
 
 			/*malloc*/
 			dist = (char *) malloc(size * sizeof(char));
@@ -62,5 +62,5 @@ char *str_concat(char *s1, char *s2)
 			i++;
 			}
 
-			return (dst)
+			return (dst);
 }
