@@ -44,7 +44,6 @@ int count_word(char *str)
 			index += word_len(str + index);
 		}
 	}
-	
 	return (words);
 }
 
@@ -94,9 +93,7 @@ for (w = 0; w < words; w++)
 		strings[w][l] = str[index++];
 
 	strings[w][l] = '\0';
-
 }
 strings[w] = NULL;
-
 return (strings);
 }
