@@ -63,7 +63,7 @@ int index = 0, words, w, letters, l;
 if (str == NULL || str[0] == '\0')
 	return (NULL);
 
-words = count_words(str);
+words = count_word(str);
 if (words == 0)
 	return (NULL);
 
