@@ -1,7 +1,9 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /*
- * main - Entry
+ * main - This is the main entry point
  * @argc: first argument
  * @argv: Second argument
  * Return: Zero
@@ -13,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error\n")
+		printf("Error\n");
 			exit(98);
 	}
 
@@ -21,9 +23,9 @@ int main(int argc, char *argv[])
 
 	if (!oprt)
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(99);
 	}
-	print("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
