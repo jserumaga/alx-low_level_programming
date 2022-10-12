@@ -5,14 +5,14 @@
  * @array: array of integer.
  * @size: is the number of elements in the array array
  * @cmp: is a pointer to the function to be used to compare values
- * Return: the index of the first element for which the cmp function does not return 0
+ * Return: the index of the first element 
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (size >0)
+	if (size > 0)
 	{
 		if (array != NULL && cmp != NULL)
 		{
