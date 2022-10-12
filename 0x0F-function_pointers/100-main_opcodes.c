@@ -12,27 +12,30 @@
 
 int main(int argc, char *argv[])
 {
-	ud_t ud_obj;
-	int val = 0, i = 0;
+	int bytes, i;
+	char *arr;
 
-	if (argc == 2)
+	if (argc != 2)
 	{
-		val = atoi(argv[1]);
+		printf("Error\n");
+		exit(1);
+	}
 
-		if (val < 0)
+	bytes = atoi(argv[1]);
+	
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	arr = (cahr *)main;
+
+	for (i = 0; i < bytes; i++);
+	{
+		if (i == bytes - 1)
 		{
-			printf("Error\n");
-			exit(2);
-		}
-
-		ud_unit(&ud_obj);
-		ud_set_input_buffer(&ud_obj, array[1], val);
-		ud_set_mode(&ud_obj, 64);
-		ud_set_syntax(&ud_obj, US_SYN_INTEL);
-
-		while (ud_disassemble(&ud_obj))
-		{
-			printf("\t%s\n", ud_insn_hex(&ud_obj));
+			printf("%02hhx ", arr[i]);
 		}
 	}
 	return (0);
