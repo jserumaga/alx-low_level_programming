@@ -35,6 +35,20 @@ size_t looped_listint_count(listint_t *head)
 			}
 
 			tortoise = tortoise->next;
+			while (tortoise != hare)
+			{
+				nodes++;
+				tortoise = tortoise->next;
+			}
+			return (nodes);
+		}
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
+	}
+
+	return (0);
+}
+
 /**
  * free_listint_safe - Fees a listint_t list safely.
  * @h: A pointer to the address of the head
